@@ -1,4 +1,4 @@
-import { check, count, error, readProjectFile, text, verdict, z } from '@cairul/plugin-kit';
+import { check, count, error, readProjectFile, text, verdict, z } from '@cairul/pdk';
 
 const reportSchema = z.object({ comparisons: z.array(z.object({ differentPixels: count })).min(1) });
 
